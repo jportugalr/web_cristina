@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "watch": "vite build --watch",
+        "clean": "rimraf node_modules && rimraf package-lock.json && rimraf public/build"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.5.1",
+        "rimraf": "^6.0.1",
+        "tailwindcss": "^3.4.17",
+        "vite": "^6.0.11"
+    }
+}
