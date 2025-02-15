@@ -52,7 +52,7 @@
                         <form method="POST" action="{{ route('contacto') }}">
                             @csrf
                             <div class="bb-contact-wrap mb-[24px]">
-                                <input type="text" name="fullname" placeholder="Nombre completo" 
+                                <input type="text" name="fullname" placeholder="Nombre completo" required
                                        class="w-full h-[50px] border border-gray-300 rounded-lg px-4 @error('fullname') border-red-500 @enderror"
                                        value="{{ old('fullname') }}">
                                 @error('fullname')
@@ -61,7 +61,7 @@
                             </div>
                         
                             <div class="bb-contact-wrap mb-[24px]">
-                                <input type="email" name="email" placeholder="Ingresa tu correo"
+                                <input type="email" name="email" placeholder="Ingresa tu correo" required
                                        class="w-full h-[50px] border border-gray-300 rounded-lg px-4 @error('email') border-red-500 @enderror"
                                        value="{{ old('email') }}">
                                 @error('email')
@@ -70,7 +70,7 @@
                             </div>
                         
                             <div class="bb-contact-wrap mb-[24px]">
-                                <input type="text" name="phone" placeholder="Ingresa tu celular" 
+                                <input type="number" name="phone" placeholder="Ingresa tu celular" required 
                                        class="w-full h-[50px] border border-gray-300 rounded-lg px-4 @error('phone') border-red-500 @enderror"
                                        value="{{ old('phone') }}">
                                 @error('phone')
@@ -79,7 +79,7 @@
                             </div>
                         
                             <div class="bb-contact-wrap mb-[24px]">
-                                <textarea name="comment" placeholder="Déjanos un comentario aquí..." 
+                                <textarea name="comment" placeholder="Déjanos un comentario aquí..."  
                                           class="w-full h-[150px] border border-gray-300 rounded-lg px-4 @error('comment') border-red-500 @enderror">{{ old('comment') }}</textarea>
                                 @error('comment')
                                     <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
