@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use App\Models\Tag;
-use Illuminate\Support\Facades\Cache as FacadesCache;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -23,11 +23,12 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        $tags = FacadesCache::remember('tags', now()->addHours(6), function () {
-            return Tag::where('status', 1)->inRandomOrder()->get();
-        });
-
-        View::share('tags', $tags);
+        if (!Session::has('tags')) {
+            Session::put('tags', Tag::all());
+        }
+    
+        // Compartir los tags con todas las vistas
+        View::share('tags', Session::get('tags'));
     }
     /*
     public function boot(): void
