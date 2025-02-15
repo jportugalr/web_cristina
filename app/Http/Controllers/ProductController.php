@@ -18,10 +18,8 @@ class ProductController extends Controller
             $catalogs = Catalog::with('promotions','images')
             ->where('status', 1)
             ->get();
-
-            $tags = Tag::where('status', 1)->inRandomOrder()->get();
-        
-    return view('products.index', ['products' => $products, 'catalogs' => $catalogs, 'tags' => $tags]);
+                   
+    return view('products.index', ['products' => $products, 'catalogs' => $catalogs]);
   }
 
   public function show(string $slug)  
@@ -36,10 +34,7 @@ class ProductController extends Controller
               ->limit(8)
               ->get();
     
-    $tags = Tag::where('status', 1)->get();    
-
-    
-    return view('products.show', ['product' => $product, 'tags' => $tags, 'products' => $products]);
+    return view('products.show', ['product' => $product, 'products' => $products]);
   }
 
 }

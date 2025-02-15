@@ -14,8 +14,6 @@ class SearchController extends Controller
     {
         $searchTerm = request('q');
 
-       
-
         $products = Product::with(['category','images','tags'])
                     ->where('products.status','=','1')
                     ->where('name', 'LIKE', '%' . $searchTerm . '%')
@@ -38,10 +36,7 @@ class SearchController extends Controller
                     });
         })
         ->get();
-
-        $tags = Tag::inRandomOrder()->get();
         
-        
-        return view('search',['products'=>$products, 'promotions'=>$promotions, 'tags'=>$tags]);
+        return view('search',['products'=>$products, 'promotions'=>$promotions]);
     }
 }

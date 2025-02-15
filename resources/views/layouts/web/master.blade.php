@@ -35,6 +35,17 @@
     
     @include('layouts.web.modal')
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH6W8ZEH5W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-JH6W8ZEH5W');
+    </script>
+            
+
 </head>
 <body>
     @include('layouts.web.header') 

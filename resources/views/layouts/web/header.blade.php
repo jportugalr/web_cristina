@@ -87,5 +87,4 @@
         @include('components.navbar')
 
 
-        
     </header>

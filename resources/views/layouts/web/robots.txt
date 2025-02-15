@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cristinaroman.com.pe/sitemap.xml

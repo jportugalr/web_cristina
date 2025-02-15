@@ -24,11 +24,8 @@ class PromotionController extends Controller
     $catalogs = Catalog::with('promotions','images')
             ->where('status', 1)
             ->get();
-
-    $tags = Tag::where('status', 1)->inRandomOrder()->get();
         
-        
-    return view('promotions.index', ['promotions' => $promotions, 'tags' => $tags, 'catalogs' => $catalogs]);
+    return view('promotions.index', ['promotions' => $promotions, 'catalogs' => $catalogs]);
   }
 
   public function show(string $catalog_slug, string $slug)  
@@ -42,10 +39,7 @@ class PromotionController extends Controller
                   ->inRandomOrder()                     
                   ->limit(8)
                   ->get();
-
-    //$promotions = Promotion::inRandomOrder()->limit(8)->get();
-    $tags = Tag::where('status',1)->inRandomOrder()->get();
-       
-    return view('promotions.show', ['promotion' => $promotion, 'promotions' => $promotions,'tags' => $tags]);
+           
+    return view('promotions.show', ['promotion' => $promotion, 'promotions' => $promotions]);
   }
 }

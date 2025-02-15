@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LocationController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\PromotionController;
 use App\Http\Controllers\RouteController;
@@ -40,6 +41,9 @@ Route::post("/contacto", [ContactController::class, 'store'])->name('contacto.en
 
 Route::get('/whatsapp/{id}/{producto?}', [RouteController::class, 'whatsapp'])->name('whatsapp');
 Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
+
+Route::get('/peru/{slug}', [LocationController::class, 'departamento'])->name('location.departamento');
+Route::get('/peru/{departamentoSlug}/{provinciaSlug}', [LocationController::class, 'provincia'])->name('location.provincia');
     
 
 /* Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',])->group(function () {

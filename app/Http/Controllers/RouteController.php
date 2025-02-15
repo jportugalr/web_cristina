@@ -28,13 +28,7 @@ class RouteController extends Controller
         //$testimonials= Testimonial::all()->where('status', 1);
         $testimonials = Testimonial::where('status', 1)->get();
         
-        //$tags = Tag::inRandomOrder()->get();      
-        $tags = Tag::where('status', 1)->get();
-        
-        
-        
-
-        return view('index', ['products' => $products, 'tags' => $tags, 'catalogs' => $catalogs,  'testimonials' => $testimonials]);
+        return view('index', ['products' => $products, 'catalogs' => $catalogs,  'testimonials' => $testimonials]);
     }
 
     public function comingsoon() {
@@ -51,7 +45,6 @@ class RouteController extends Controller
     }
 
     public function about(){
-        $tags = Tag::inRandomOrder()->get();   
         $testimonials= Testimonial::all()->where('status', 1);
         $leaders = Leader::all()->where('status', 1);
 
@@ -63,13 +56,12 @@ class RouteController extends Controller
         $tags = Tag::inRandomOrder()->get();   
         $testimonials= Testimonial::all()->where('status', 1);
 
-        return view('faq',['tags' => $tags, 'testimonials' => $testimonials, 'faqs' => $faqs]);
+        return view('faq',['testimonials' => $testimonials, 'faqs' => $faqs]);
     }
 
     public function contact(){
-        $tags = Tag::inRandomOrder()->get();           
-
-        return view('contact-us',['tags' => $tags]);
+        
+        return view('contact-us');
     }
   
     public function whatsapp($id, $text=null) {

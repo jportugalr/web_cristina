@@ -56,10 +56,10 @@
                                         <a href="3" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] leading-[20px] text-[#686e7d] hover:text-[#6c7fd8] mb-[0] inline-block break-all tracking-[0] font-normal">Rena Ware Amazonas</a>
                                     </li>
                                     <li class="bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px]">
-                                        <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] leading-[20px] text-[#686e7d] hover:text-[#6c7fd8] mb-[0] inline-block break-all tracking-[0] font-normal">Rena Ware Áncash</a>
+                                        <a href="{{ route('location.departamento',['slug'=>'piura']) }}" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] leading-[20px] text-[#686e7d] hover:text-[#6c7fd8] mb-[0] inline-block break-all tracking-[0] font-normal">Rena Ware Áncash</a>
                                     </li>
                                     <li class="bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px]">
-                                        <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] leading-[20px] text-[#686e7d] hover:text-[#6c7fd8] mb-[0] inline-block break-all tracking-[0] font-normal">Rena Ware Apurímac</a>
+                                        <a href="{{ url('/peru/piura') }}" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] leading-[20px] text-[#686e7d] hover:text-[#6c7fd8] mb-[0] inline-block break-all tracking-[0] font-normal">Rena Ware Apurímac</a>
                                     </li>
                                     <li class="bb-footer-link leading-[1.5] flex items-center mb-[16px] max-[991px]:mb-[15px]">
                                         <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[12px] leading-[20px] text-[#686e7d] hover:text-[#6c7fd8] mb-[0] inline-block break-all tracking-[0] font-normal">Rena Ware Arequipa</a>

@@ -55,6 +55,28 @@ class SitemapController extends Controller
             ];
         }
 
+        // Agregar departamentos y provincias dinámicamente
+        $locations = config('locations.departamentos');
+        foreach ($locations as $departamento) {
+            $urls[] = [
+                'loc' => route('location.departamento', ['slug' => $departamento['slug']]),
+                'priority' => '0.8',
+                'changefreq' => 'monthly'
+            ];
+        
+        // Provincias dentro del departamento
+        foreach ($departamento['provincias'] as $provincia) {
+            $urls[] = [
+                'loc' => route('location.provincia', [
+                    'departamentoSlug' => $departamento['slug'],
+                    'provinciaSlug' => $provincia['slug']
+                ]),
+                'priority' => '0.7',
+                'changefreq' => 'monthly'
+            ];
+        }
+    }       
+
         return response()->view('sitemap', compact('urls'))->header('Content-Type', 'application/xml');
     }
 }
