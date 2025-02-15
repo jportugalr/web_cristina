@@ -48,7 +48,7 @@ class RouteController extends Controller
         $testimonials= Testimonial::all()->where('status', 1);
         $leaders = Leader::all()->where('status', 1);
 
-        return view('about-us',['tags' => $tags, 'testimonials' => $testimonials, 'leaders' => $leaders]);
+        return view('about-us',['testimonials' => $testimonials, 'leaders' => $leaders]);
     }
 
     public function faq(){
