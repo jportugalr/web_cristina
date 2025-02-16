@@ -1,6 +1,6 @@
 @props(['faq'])
 
-<section itemscope itemtype="https://schema.org/FAQPage">
+<section itemscope>
     <div class="bb-accordion-item overflow-hidden mb-[24px]">
         <h3 class="accordion-head m-[0] py-[1rem] px-[1.25rem] text-[#162c48] text-[16px] leading-[20px] font-medium relative rounded-[15px] border-[1px] border-solid border-[#eee] font-Poppins cursor-pointer tracking-[0] max-[767px]:text-[15px]">
             {{ $faq->question }}
