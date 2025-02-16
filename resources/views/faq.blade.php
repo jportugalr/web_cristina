@@ -49,7 +49,7 @@
                                 @endif                                    
                             @endforeach
                                 
-                            <h2 id="compra-y-pedidos" class="font-semibold text-lg mb-4">><img src="{{ asset('assets/img/icons/pot.svg') }}" alt="Olla Rena Ware" class="w-6 h-6 inline-block"> 2. Sobre la Compra y Pedidos</h2>
+                            <h2 id="compra-y-pedidos" class="font-semibold text-lg mb-4"><img src="{{ asset('assets/img/icons/pot.svg') }}" alt="Olla Rena Ware" class="w-6 h-6 inline-block"> 2. Sobre la Compra y Pedidos</h2>
                             @foreach ($faqs as $faq)
                                 @if ($faq->category == 1)
                                     <x-web.faq-card :faq="$faq"/>                                    
@@ -98,4 +98,23 @@
         </div>
     </section>
 
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            @foreach ($faqs as $faq)
+            {
+              "@type": "Question",
+              "name": "{{ $faq->question }}",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ strip_tags($faq->answer) }}"
+              }
+            }@if(!$loop->last),@endif
+            @endforeach
+          ]
+        }
+    </script>
 @endsection
