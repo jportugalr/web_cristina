@@ -8,6 +8,26 @@
     <meta property="og:title" content="FAQ Rena Ware Perú | Responde tus Dudas">
     <meta property="og:description" content="Consulta las preguntas más frecuentes sobre nuestros productos, políticas de garantía, métodos de pago y más.">
     <meta property="og:image" content="{{ asset('images/og-image-faq.jpg') }}">    
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            @foreach ($faqs as $faq)
+            {
+              "@type": "Question",
+              "name": "{{ $faq->question }}",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "{{ strip_tags($faq->answer) }}"
+              }
+            }@if(!$loop->last),@endif
+            @endforeach
+          ]
+        }
+    </script>
+    
 @endsection
 
 @section('content')
@@ -97,24 +117,5 @@
             </div>
         </div>
     </section>
-
-
-    <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          "mainEntity": [
-            @foreach ($faqs as $faq)
-            {
-              "@type": "Question",
-              "name": "{{ $faq->question }}",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "{{ strip_tags($faq->answer) }}"
-              }
-            }@if(!$loop->last),@endif
-            @endforeach
-          ]
-        }
-    </script>
+   
 @endsection
