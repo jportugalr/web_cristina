@@ -29,6 +29,7 @@ class AppServiceProvider extends ServiceProvider
     
         // Compartir los tags con todas las vistas
         View::share('tags', Session::get('tags'));
+        
     }
     /*
     public function boot(): void

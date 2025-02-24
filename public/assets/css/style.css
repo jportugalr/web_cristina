@@ -1352,8 +1352,8 @@ select {
   text-orientation: upright;
 }
 .bb-pro-box .bb-pro-img .bb-pro-actions .bb-btn-group:hover {
-  background-color: #6c7fd8;
-  border-color: #6c7fd8;
+  background-color: #e36a53;
+  border-color: #e36a53;
 }
 .bb-pro-box .bb-pro-img .bb-pro-actions .bb-btn-group:hover i {
   color: #fff;
@@ -2365,4 +2365,6 @@ ul#ProTab li.active a {
   font-weight: 600;
   color: #686e7d;
 }
+
+
 /*# sourceMappingURL=style.css.map */

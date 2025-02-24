@@ -33,14 +33,20 @@
                                 <div class="flex flex-wrap w-full mb-[-24px]">
                                     <div class="min-[992px]:w-[50%] w-full px-[12px] min-[992px]:order-1 order-2 mb-[24px]">
                                         <div class="hero-contact h-full flex flex-col items-start justify-center max-[991px]:items-center">
-                                            <p class="mb-[20px] font-Poppins text-[18px] text-[#777] font-light leading-[28px] tracking-[0.03rem] max-[1199px]:mb-[10px] max-[1199px]:text-[16px]">Rena Ware 2025</p>
-                                            <h1 class="mb-[20px] font-quicksand text-[50px] text-[#3d4750] font-bold tracking-[0.03rem] leading-[1.2] max-[1199px]:mb-[10px] max-[1199px]:text-[38px] max-[991px]:text-center max-[991px]:text-[45px] max-[767px]:text-[40px] max-[575px]:text-[35px] max-[420px]:text-[30px] max-[360px]:text-[28px]">¿Estás listo para descubrir <span class="relative text-[#6c7fd8]">La Diferencia?</span><br> </h1>
-                                            <a href="{{ route('whatsapp', ['id' => 4,]) }}" target="_blank" class="bb-btn-1 transition-all duration-[0.3s] ease-in-out font-Poppins leading-[28px] tracking-[0.03rem] py-[8px] px-[20px] text-[14px] font-normal text-[#3d4750] bg-transparent rounded-[10px] border-[1px] border-solid border-[#3d4750] max-[1199px]:py-[3px] max-[1199px]:px-[15px] hover:bg-[#6c7fd8] hover:border-[#6c7fd8] hover:text-[#fff]">Conoce más</a>
+                                            <p class="mb-[20px] font-Poppins text-[18px] text-[#162c48] font-semibold leading-[28px] tracking-[0.03rem] max-[1199px]:mb-[10px] max-[1199px]:text-[16px]">RENA WARE</p>
+                                            <h1 class="mb-[20px] font-quicksand text-[50px] text-[#3d4750] font-bold tracking-[0.03rem] leading-[1.2] max-[1199px]:mb-[10px] max-[1199px]:text-[38px] max-[991px]:text-center max-[991px]:text-[45px] max-[767px]:text-[40px] max-[575px]:text-[35px] max-[420px]:text-[30px] max-[360px]:text-[28px]">Productos que pasan <span class="relative text-[#6c7fd8]"></br>la prueba del tiempo</span><br> </h1>
+                                            <a href="{{ route('whatsapp', ['id' => 4,]) }}" target="_blank" class="bb-btn-1 transition-all duration-[0.3s] ease-in-out font-Poppins leading-[28px] tracking-[0.03rem] py-[8px] px-[20px] text-[14px] font-semibold text-[#fff] bg-[#162c48] rounded-[10px] border-[1px] border-solid border-[#3d4750] max-[1199px]:py-[3px] max-[1199px]:px-[15px] hover:bg-[#e36a53] hover:border-[#e36a53] hover:text-[#fff] capitalize">Conoce nuestra historia</a>
                                         </div>
                                     </div>
                                     <div class="min-[992px]:w-[50%] w-full px-[12px] min-[992px]:order-2 order-1 mb-[24px]">
-                                        <div class="hero-image pr-[50px] relative max-[991px]:px-[50px] max-[575px]:px-[30px] flex justify-center max-[420px]:p-[0]">
-                                            <img src="{{ asset('assets/img/hero/hero-1.png') }}" alt="hero" class="w-full pb-[50px] opacity-[1] max-[1199px]:pr-[30px] max-[991px]:pr-[0] max-[575px]:pb-[30px] max-[420px]:pb-[15px]">
+                                        <div class="video-container hero-image pr-[50px] relative max-[991px]:px-[50px] max-[575px]:px-[30px] flex justify-center max-[420px]:p-[0]">
+                                            
+                                            <script src="https://fast.wistia.com/player.js" async></script>
+                                            <script src="https://fast.wistia.com/embed/zaxon6nvmv.js" async type="module"></script>
+                                            <style>wistia-player[media-id='zaxon6nvmv']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/zaxon6nvmv/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> 
+                                            <wistia-player autoplay="false" media-id="zaxon6nvmv" seo="false" aspect="1.7777777777777777"></wistia-player>
+                                            
+                                            
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="animate-shape w-[120%] absolute top-[-50px] right-[-50px] z-[-1] max-[1399px]:right-[-30px] max-[1199px]:w-[125%] max-[991px]:w-[100%] max-[991px]:top-[0] max-[575px]:right-[0] max-[420px]:w-[110%] max-[420px]:right-[-30px]">
                                                 <linearGradient id="shape_1" x1="100%" x2="0%" y1="100%" y2="0%"></linearGradient>
                                                 <path d="">
@@ -51,20 +57,25 @@
                                     </div>
                                 </div>
                             </div>
-
+                            
                             <!-- Slide-2 -->
                             <div class="swiper-slide slide-2">
                                 <div class="flex flex-wrap w-full mb-[-24px]">
                                     <div class="min-[992px]:w-[50%] w-full px-[12px] min-[992px]:order-1 order-2 mb-[24px]">
                                         <div class="hero-contact h-full flex flex-col items-start justify-center max-[991px]:items-center">
-                                            <p class="mb-[20px] font-Poppins text-[18px] text-[#777] font-light leading-[28px] tracking-[0.03rem] max-[1199px]:mb-[10px] max-[1199px]:text-[16px]">El buen comer</p>
-                                            <h2 class="mb-[20px] font-quicksand text-[50px] text-[#3d4750] font-bold tracking-[0.03rem] leading-[1.2] max-[1199px]:mb-[10px] max-[1199px]:text-[38px] max-[991px]:text-center max-[991px]:text-[45px] max-[767px]:text-[40px] max-[575px]:text-[35px] max-[420px]:text-[30px] max-[360px]:text-[28px]">Imagina un verano lleno de <span class="relative text-[#6c7fd8]">momentos inolvidables</span><br> </h2>
-                                            <a href="{{ route('whatsapp', ['id' => 4,]) }}" target="_blank" class="bb-btn-1 transition-all duration-[0.3s] ease-in-out font-Poppins leading-[28px] tracking-[0.03rem] py-[8px] px-[20px] text-[14px] font-normal text-[#3d4750] bg-transparent rounded-[10px] border-[1px] border-solid border-[#3d4750] max-[1199px]:py-[3px] max-[1199px]:px-[15px] hover:bg-[#6c7fd8] hover:border-[#6c7fd8] hover:text-[#fff]">Conoce más</a>
+                                            <p class="mb-[20px] font-Poppins text-[18px] text-[#777] font-light leading-[28px] tracking-[0.03rem] max-[1199px]:mb-[10px] max-[1199px]:text-[16px]"> Únete y descubre cómo empezar hoy.</p>
+                                            <h2 class="mb-[20px] font-quicksand text-[50px] text-[#3d4750] font-bold tracking-[0.03rem] leading-[1.2] max-[1199px]:mb-[10px] max-[1199px]:text-[38px] max-[991px]:text-center max-[991px]:text-[45px] max-[767px]:text-[40px] max-[575px]:text-[35px] max-[420px]:text-[30px] max-[360px]:text-[28px]">Convierte tu pasión  <span class="relative text-[#6c7fd8]"></br>en una oportunidad</span><br> </h2>
+                                            <a href="{{ route('whatsapp', ['id' => 4,]) }}" target="_blank" class="bb-btn-1 transition-all duration-[0.3s] ease-in-out font-Poppins leading-[28px] tracking-[0.03rem] py-[8px] px-[20px] text-[14px] font-semibold text-[#fff] bg-[#162c48] rounded-[10px] border-[1px] border-solid border-[#3d4750] max-[1199px]:py-[3px] max-[1199px]:px-[15px] hover:bg-[#e36a53] hover:border-[#e36a53] hover:text-[#fff] capitalize">Descubre cómo empezar</a>
                                         </div>
                                     </div>
                                     <div class="min-[992px]:w-[50%] w-full px-[12px] min-[992px]:order-2 order-1 mb-[24px]">
                                         <div class="hero-image pr-[50px] relative max-[991px]:px-[50px] max-[575px]:px-[30px] flex justify-center max-[420px]:p-[0]">
-                                            <img src="{{ asset('assets/img/hero/hero-2.png') }}" alt="hero" class="w-full pb-[50px] opacity-[1] max-[1199px]:pr-[30px] max-[991px]:pr-[0] max-[575px]:pb-[30px] max-[420px]:pb-[15px]">
+                                            
+                                            <script src="https://fast.wistia.com/player.js" async></script>
+                                            <script src="https://fast.wistia.com/embed/rln1o8fvy4.js" async type="module"></script>
+                                            <style>wistia-player[media-id='rln1o8fvy4']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/rln1o8fvy4/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
+                                            <wistia-player media-id="rln1o8fvy4" seo="false" aspect="1.7777777777777777"></wistia-player>
+
                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="animate-shape w-[120%] absolute top-[-50px] right-[-50px] z-[-1] max-[1399px]:right-[-30px] max-[1199px]:w-[125%] max-[991px]:w-[100%] max-[991px]:top-[0] max-[575px]:right-[0] max-[420px]:w-[110%] max-[420px]:right-[-30px]">
                                                 <linearGradient id="shape_2" x1="80%" x2="0%" y1="80%" y2="0%">
                                                 </linearGradient>
@@ -78,6 +89,7 @@
                                 </div>
                             </div>
 
+                            {{-- 
                             <!-- Slide-3 -->
                             <div class="swiper-slide slide-3">
                                 <div class="flex flex-wrap w-full mb-[-24px]">
@@ -102,7 +114,8 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
+                            
 
                         </div>
                         <div class="swiper-pagination swiper-pagination-white"></div>
@@ -134,34 +147,32 @@
                 <div class="min-[992px]:w-[58.33%] w-full px-[12px] mb-[24px]">
                     <div class="bb-category-contact max-[991px]:mt-[-24px]">
                         <div class="category-title mb-[30px] max-[991px]:hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            <h2 class="font-quicksand text-[124px] text-[#fff] opacity-[0.15] font-bold leading-[1.2] tracking-[0.03rem] max-[1399px]:text-[95px] max-[1199px]:text-[70px] max-[767px]:text-[42px]">Beneficios Exclusivos</h2>
+                            <h2 class="font-quicksand text-justify text-[124px] text-[#fff] opacity-[1] font-bold leading-[1.2] tracking-[0.03rem] max-[1399px]:text-[95px] max-[1199px]:text-[70px] max-[767px]:text-[42px]">Certificación NSF P - 390</h2>
                         </div>
                         <div class="bb-category-block owl-carousel ml-[-150px] w-[calc(100%+150px)] pt-[30px] pl-[30px] bg-[#fff] rounded-tl-[30px] relative max-[991px]:ml-[0] max-[991px]:w-full max-[991px]:p-[0]">
-                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-1 bg-[#fef1f1]" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
+                            
+                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-1 bg-[#1b479921] " data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
                                 <div class="category-image mb-[12px]">
-                                    <img src="{{ asset('assets/img/category/1.svg') }}" alt="category" class="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px]">
+                                    <img src="{{ asset('assets/img/category/construccion.gif') }}" alt="rendimiento superior" class="w-[90%] h-[65px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-[10px] ">
                                 </div>
                                 <div class="category-sub-contact">
-                                    <h5 class="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="javascript:void(0)" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize">NSF P390</a></h5>
-                                    <p class="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">Certificación</p>
+                                    <h5 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="javascript:void(0)" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Construcción y Diseño</a></h5>                                   
                                 </div>
                             </div>
-                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-2 bg-[#e1fcf2]" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
+                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-2 bg-[#b7fad53f]  data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
                                 <div class="category-image mb-[12px]">
-                                    <img src="{{ asset('assets/img/category/2.svg') }}" alt="category" class="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px]">
+                                    <img src="{{ asset('assets/img/category/superior.gif') }}" alt="rendimiento superior" class="w-[90%] h-[65px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-[10px] ">
                                 </div>
                                 <div class="category-sub-contact">
-                                    <h5 class="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="javascript:void(0)" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize">Garantía</a></h5>
-                                    <p class="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">Vitalicia</p>
+                                    <h5 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="javascript:void(0)" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Rendimiento Superior</a></h5>                                   
                                 </div>
                             </div>
-                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-3 bg-[#f4f1fe]" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-3 bg-[#f3a06942] " data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
                                 <div class="category-image mb-[12px]">
-                                    <img src="{{ asset('assets/img/category/3.svg') }}" alt="category" class="w-[50px] h-[50px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px]">
+                                    <img src="{{ asset('assets/img/category/seguridad.gif') }}" alt="rendimiento superior" class="w-[90%] h-[65px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-[10px] ">
                                 </div>
                                 <div class="category-sub-contact">
-                                    <h5 class="mb-[2px] text-[16px] font-quicksand text-[#3d4750] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="javascript:void(0)" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#3d4750] capitalize">Inducción</a></h5>
-                                    <p class="font-Poppins text-[13px] text-[#686e7d] leading-[25px] font-light tracking-[0.03rem]">Compatible</p>
+                                    <h5 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="javascript:void(0)" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Seguridad en Materiales</a></h5>                                   
                                 </div>
                             </div>
                             
@@ -380,7 +391,65 @@
         </div>
     </section>
     
+    <!-- Sección de Preguntas Frecuentes -->
+    <section class="section-faq py-[50px] max-[1199px]:py-[35px] bg-[#f8f8fb]">
+        <div class="flex flex-wrap justify-between items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+            
+            <!-- Título y Descripción -->
+            <div class="w-full text-center mb-[40px]">
+                <h2 class="font-quicksand text-[30px] font-bold text-[#3d4750] leading-[1.2]">Preguntas Frecuentes</h2>
+                <p class="font-Poppins text-[16px] text-[#686e7d] leading-[22px] max-w-[600px] mx-auto">
+                    Resuelve tus dudas sobre nuestros productos, certificaciones y beneficios.
+                </p>
+            </div>
+
+            <!-- Acordeón de Preguntas Frecuentes -->
+            <div class="w-full">
+                <div class="faq-accordion">                
+                    @foreach ($faqs as $faq)                  
+                            <x-web.faq-card :faq="$faq"/>                                                                              
+                    @endforeach
+                    
+
+                </div>
+            </div>
+
+            <div class="text-center mt-[20px]">
+                <a href="{{ route('faq') }}" class="bb-btn-1 transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] px-[25px] text-[16px] font-semibold text-[#fff] bg-[#162c48] rounded-[10px] border-[1px] border-solid border-[#3d4750] hover:bg-[#e36a53] hover:border-[#e36a53]">
+                    Lee todas las preguntas frecuentes →
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
     @include('layouts.testimonials')
+
+    <!-- Blog -->
+    <section class="section-blog overflow-hidden pb-[50px] max-[1199px]:pb-[35px] pt-[100px] max-[1199px]:pt-[70px]">
+        <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
+            <div class="flex flex-wrap w-full">
+                <div class="w-full px-[12px]">
+                    <div class="blog-2-slider owl-carousel">
+
+                        @foreach ($articles as $article)
+                           <x-web.article-short-card :article="$article" />                            
+                        @endforeach
+
+                    </div>
+                </div>                
+            </div>
+        </div>
+        <div class="text-center mt-[20px]">
+            <a href="{{ route('blog.index') }}" class="bb-btn-1 transition-all duration-[0.3s] ease-in-out font-Poppins py-[10px] px-[25px] text-[16px] font-semibold text-[#fff] bg-[#162c48] rounded-[10px] border-[1px] border-solid border-[#3d4750] hover:bg-[#e36a53] hover:border-[#e36a53]">
+                Visita nuestro Blog →
+            </a>
+        </div>
+    </section>
+
+
+
 
     @include('layouts.web.modal')
 

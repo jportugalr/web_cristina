@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use App\Models\Catalog;
 use App\Models\Faq;
 use App\Models\Leader;
@@ -27,8 +28,20 @@ class RouteController extends Controller
          
         //$testimonials= Testimonial::all()->where('status', 1);
         $testimonials = Testimonial::where('status', 1)->get();
-        
-        return view('index', ['products' => $products, 'catalogs' => $catalogs,  'testimonials' => $testimonials]);
+
+        $faqs = Faq::where('id',1)
+                    ->orWhere('id',25)
+                    ->orWhere('id',26)
+                    ->orWhere('id',3)
+                    ->orWhere('id',27)
+                    ->get();
+
+        $articles = Article::with('images')
+                    ->select(['id','title','intro','slug','created_at'])
+                    ->where('status', 1)
+                    ->get(); 
+                
+        return view('index', ['products' => $products, 'catalogs' => $catalogs,  'testimonials' => $testimonials, 'faqs'=>$faqs, 'articles' => $articles]);
     }
 
     public function comingsoon() {
