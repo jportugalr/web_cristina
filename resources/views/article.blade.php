@@ -69,10 +69,8 @@
 
                     
                             <p class="mb-[16px] font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]">{{$article->intro}}</p>
-                            <p class="mb-[16px] font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]">{!! $article->content !!}</p>
-
-                            
-                            <p class="mb-[16px] font-Poppins text-[15px] text-[#686e7d] font-light leading-[28px] tracking-[0.03rem]">{!! $article->source !!}</p>
+                            {!! $article->content !!}
+                                                        
                             
                             <!-- extra imagenes-->
                             <!--
