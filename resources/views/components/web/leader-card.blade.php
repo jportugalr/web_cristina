@@ -6,13 +6,13 @@
             <div class="inner-shape relative"></div>
             <ul class="mb-[0] py-[20px] px-[10px]">
                 <li class="bb-social-link leading-[28px] pb-[10px]">
-                    <a href="javascript:void(0)"><i class="ri-facebook-fill text-[16px] hover:text-[#6c7fd8]"></i></a>
+                    <a href="#pendiente"><i class="ri-facebook-fill text-[16px] hover:text-[#6c7fd8]"></i></a>
                 </li>
                 <li class="bb-social-link leading-[28px] pb-[10px]">
-                    <a href="javascript:void(0)"><i class="ri-twitter-x-fill text-[16px] hover:text-[#6c7fd8]"></i></a>
+                    <a href="#pendiente"><i class="ri-twitter-x-fill text-[16px] hover:text-[#6c7fd8]"></i></a>
                 </li>
                 <li class="bb-social-link leading-[28px]">
-                    <a href="javascript:void(0)"><i class="ri-linkedin-fill text-[16px] hover:text-[#6c7fd8]"></i></a>
+                    <a href="#pendiente"><i class="ri-linkedin-fill text-[16px] hover:text-[#6c7fd8]"></i></a>
                 </li>
             </ul>
         </div>

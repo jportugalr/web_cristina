@@ -4,7 +4,7 @@
     <div class="bb-pro-box bg-[#fff] border-[1px] border-solid border-[#eee] rounded-[20px]">
         <div class="bb-pro-img overflow-hidden relative border-b-[1px] border-solid border-[#eee] z-[4]">
             <span class="flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]">
-                <span class="text-[14px] text-[#777] font-medium uppercase">{{ $promotion->details->first()->product->category->name}}</span>
+                <span class="text-[14px] text-[#555] font-medium uppercase">{{ $promotion->details->first()->product->category->name}}</span>
             </span>
             <a href="{{ route('promociones.mostrar',['catalogo'=>$promotion->catalog->slug, 'slug'=>$promotion->slug]) }}">
                 <div class="inner-img relative block overflow-hidden pointer-events-none rounded-t-[20px]">
@@ -23,7 +23,7 @@
             <ul class="bb-pro-actions transition-all duration-[0.3s] ease-in-out my-[0] mx-[auto] absolute z-[9] left-[0] right-[0] bottom-[0] flex flex-row items-center justify-center opacity-[0]">
                 <li class="bb-btn-group transition-all duration-[0.3s] ease-in-out h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#25D366] border-[1px] border-solid border-[#eee] rounded-[10px]">
                     <a href="{{ route('whatsapp', ['id' => 2, 'producto' => $promotion->nombre]) }}" target="_blank" class="h-[35px] flex items-center justify-center ml-1 mr-1">                        
-                        <i class="ri-whatsapp-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px] mr-1"></i> Comprar
+                        <i class="ri-whatsapp-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#555] leading-[10px] mr-1"></i> Comprar
                     </a>
                 </li>
             </ul>

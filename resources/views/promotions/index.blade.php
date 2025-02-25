@@ -51,7 +51,7 @@
                     <div class="flex flex-wrap w-full px-[12px]">
                         <ul class="bb-shop-tags w-full flex flex-wrap justify-center m-[-5px]">
                             <li class="active-tags m-[5px]">
-                                <a class="flex bg-[#fff] rounded-[15px] border-[1px] border-solid border-[#eee] py-[10px] px-[20px] transition-all duration-[0.3s] ease-in-out font-Poppins text-[15px] text-[#686e7d] font-normal leading-[28px] tracking-[0.03rem] hover:text-[#6c7fd8] hover:border-[#6c7fd8]">Estas viendo: {{ $promotions->first()->catalog->name }}</a>
+                                <a href="#pendiente" class="flex bg-[#fff] rounded-[15px] border-[1px] border-solid border-[#eee] py-[10px] px-[20px] transition-all duration-[0.3s] ease-in-out font-Poppins text-[15px] text-[#686e7d] font-normal leading-[28px] tracking-[0.03rem] hover:text-[#6c7fd8] hover:border-[#6c7fd8]">Estas viendo: {{ $promotions->first()->catalog->name }}</a>
                             </li>
                         </ul>
                     </div>
@@ -76,7 +76,7 @@
                                     <div class="flex flex-wrap w-full justify-center">
                                         <div class="bb-btn-group transition-all duration-[0.3s] ease-in-out h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#25D366] border-[1px] border-solid border-[#eee] rounded-[10px]">
                                             <a href="{{ route('whatsapp', ['id' => 4]) }}" title="Wishlist" class=" h-[35px] flex items-center justify-center ml-1 mr-1">
-                                                <i class="ri-whatsapp-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px] mr-1"></i> Quiero saber más
+                                                <i class="ri-whatsapp-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#555] leading-[10px] mr-1"></i> Quiero saber más
                                             </a>
                                         </div>                                        
                                     </div>

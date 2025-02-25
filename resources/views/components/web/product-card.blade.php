@@ -9,7 +9,7 @@
             
             <span class="flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]">   
                       
-                <span class="text-xs text-[#777] font-medium uppercase">{{ $product->category->name }}</span>
+                <span class="text-xs text-[#555] font-medium uppercase">{{ $product->category->name }}</span>
             </span>
             
             <a href="{{ route('productos.mostrar',['slug'=>$product->slug]) }}">
@@ -35,8 +35,8 @@
         <div class="bb-pro-contact p-[20px]">
             <div class="bb-pro-subtitle mb-[8px] flex flex-wrap justify-start">                                
                 @foreach ($product->tags as $tag)
-                    <a class="text-xs">  {{ $tag->tag->tag }}</a>
-                    <a class="text-xs ml-1 mr-1"> | </a>
+                    <a href="#pendiente" class="text-xs">  {{ $tag->tag->tag }}</a>
+                    <a href="#pendiente" class="text-xs ml-1 mr-1"> | </a>
                 @endforeach               
             </div>
 

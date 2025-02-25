@@ -29,7 +29,7 @@
                                 <li class="text-[14px] font-normal px-[5px]"><i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i></li>
                                 <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px]  "><a href="{{ route('blog.index') }}">Blog</a></li>
                                 <li class="text-[14px] font-normal px-[5px]"><i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i></li>
-                                <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active line-clamp-1"><a href="javascript:void(0)">{{ $article->slug }}</a></li>
+                                <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active line-clamp-1"><a href="#pendiente">{{ $article->slug }}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                             <img src={{ asset($article->images->first()->url)}} alt="details-one" class="w-full rounded-[15px]">
                         </div>
                         <div class="inner-blog-details-contact mb-[30px]">
-                            <span class="font-Poppins mb-[6px] text-[15px] leading-[26px] font-light tracking-[0.02rem] text-[#777]"><!--Fecha--></span>
+                            <span class="font-Poppins mb-[6px] text-[15px] leading-[26px] font-light tracking-[0.02rem] text-[#555]"><!--Fecha--></span>
                             <h4 class="sub-title font-quicksand tracking-[0.03rem] leading-[1.2] mb-[12px] text-[22px] font-bold text-[#3d4750] max-[575px]:text-[20px]">{{ $article->title }}</h4>
 
                     

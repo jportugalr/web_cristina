@@ -15,12 +15,12 @@
                                 <div class="inner-contact mb-[24px]">
                                     <ul class="flex flex-wrap">
                                         <li>
-                                            <a href="" class="transition-all duration-[0.3s] ease-in-out font-Poppins leading-[28px] tracking-[0.03rem] text-[13px] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize"></a>
+                                            <a href="#pendiente" class="transition-all duration-[0.3s] ease-in-out font-Poppins leading-[28px] tracking-[0.03rem] text-[13px] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize"></a>
                                         </li>
                               
                                         @foreach ( $tags as $tag )
                                             <li>                                               
-                                                <a href="" class="transition-all duration-[0.3s] ease-in-out font-Poppins leading-[28px] tracking-[0.03rem] text-[13px] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize">{{ $tag->tag }}</a>
+                                                <a href="#pendiente" class="transition-all duration-[0.3s] ease-in-out font-Poppins leading-[28px] tracking-[0.03rem] text-[13px] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize">{{ $tag->tag }}</a>
                                             </li>  
                                         @endforeach
                                          
@@ -168,7 +168,7 @@
                                             <span class="w-[25px] basis-[auto] grow-[0] shrink-[0]">
                                                 <i class="ri-mail-line leading-[0] text-[18px] text-[#f35034]"></i>
                                             </span>
-                                            <a href="mailto:maria_roman58@hotmail.com" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] leading-[20px] text-[#686e7d] inline-block relative break-all tracking-[0] font-normal max-[1399px]:text-[15px] max-[1199px]:text-[14px]">maria_roman58@hotmail.com</a>
+                                            <a href="{{ route('contacto') }}" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] leading-[20px] text-[#686e7d] inline-block relative break-all tracking-[0] font-normal max-[1399px]:text-[15px] max-[1199px]:text-[14px]">maria_roman58@hotmail.com</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -180,16 +180,16 @@
                                 <div class="bb-footer-links bb-footer-dropdown hidden max-[991px]:mb-[35px]">
                                     <ul class="align-items-center flex flex-wrap items-center">
                                         <li class="bb-footer-link leading-[1.5] flex items-center pr-[5px]">
-                                            <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] bg-[#f35034] hover:bg-[#6c7fd8] capitalize flex items-center justify-center text-[15px] leading-[20px] text-[#686e7d] relative break-all font-normal"><i class="ri-facebook-fill text-[16px] text-[#fff]"></i></a>
+                                            <a href="#pendiente" class="transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] bg-[#f35034] hover:bg-[#6c7fd8] capitalize flex items-center justify-center text-[15px] leading-[20px] text-[#686e7d] relative break-all font-normal"><i class="ri-facebook-fill text-[16px] text-[#fff]"></i></a>
                                         </li>
                                         <li class="bb-footer-link leading-[1.5] flex items-center pr-[5px]">
-                                            <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] bg-[#f35034] hover:bg-[#6c7fd8] capitalize flex items-center justify-center text-[15px] leading-[20px] text-[#686e7d] relative break-all font-normal"><i class="ri-twitter-fill text-[16px] text-[#fff]"></i></a>
+                                            <a href="#pendiente" class="transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] bg-[#f35034] hover:bg-[#6c7fd8] capitalize flex items-center justify-center text-[15px] leading-[20px] text-[#686e7d] relative break-all font-normal"><i class="ri-twitter-fill text-[16px] text-[#fff]"></i></a>
                                         </li>
                                         <li class="bb-footer-link leading-[1.5] flex items-center pr-[5px]">
-                                            <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] bg-[#f35034] hover:bg-[#6c7fd8] capitalize flex items-center justify-center text-[15px] leading-[20px] text-[#686e7d] relative break-all font-normal"><i class="ri-linkedin-fill text-[16px] text-[#fff]"></i></a>
+                                            <a href="#pendiente" class="transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] bg-[#f35034] hover:bg-[#6c7fd8] capitalize flex items-center justify-center text-[15px] leading-[20px] text-[#686e7d] relative break-all font-normal"><i class="ri-linkedin-fill text-[16px] text-[#fff]"></i></a>
                                         </li>
                                         <li class="bb-footer-link leading-[1.5] flex items-center pr-[5px]">
-                                            <a href="javascript:void(0)" class="transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] bg-[#f35034] hover:bg-[#6c7fd8] capitalize flex items-center justify-center text-[15px] leading-[20px] text-[#686e7d] relative break-all font-normal"><i class="ri-instagram-line text-[16px] text-[#fff]"></i></a>
+                                            <a href="#pendiente" class="transition-all duration-[0.3s] ease-in-out w-[30px] h-[30px] rounded-[5px] bg-[#f35034] hover:bg-[#6c7fd8] capitalize flex items-center justify-center text-[15px] leading-[20px] text-[#686e7d] relative break-all font-normal"><i class="ri-instagram-line text-[16px] text-[#fff]"></i></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -208,7 +208,7 @@
                         <div class="footer-copy max-[991px]:mb-[15px]">
                             <div class="footer-bottom-copy max-[991px]:text-center">
                                 <div class="bb-copy text-[#686e7d] text-[13px] tracking-[1px] text-center font-normal leading-[2]">Organización <span class="text-[#686e7d] text-[13px] tracking-[1px] text-center font-normal" id="copyright_year"></span>
-                                    <a class="site-name transition-all duration-[0.3s] ease-in-out font-medium text-[#6c7fd8] hover:text-[#3d4750] font-Poppins text-[15px] leading-[28px] tracking-[0.03rem]" href="javascript:void(0)">Excelencia Peruana</a> derechos reservados.
+                                    <a href="#pendiente" class="site-name transition-all duration-[0.3s] ease-in-out font-medium text-[#6c7fd8] hover:text-[#3d4750] font-Poppins text-[15px] leading-[28px] tracking-[0.03rem]">Excelencia Peruana</a> derechos reservados.
                                 </div>                                
                             </div>
                         </div>

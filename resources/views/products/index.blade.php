@@ -72,7 +72,7 @@
                                     <div class="flex flex-wrap w-full justify-center">
                                         <div class="bb-btn-group transition-all duration-[0.3s] ease-in-out h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#25D366] border-[1px] border-solid border-[#eee] rounded-[10px]">
                                             <a href="{{ route('whatsapp', ['id' => 4]) }}" target="_blank" title="Wishlist" class=" h-[35px] flex items-center justify-center ml-1 mr-1">
-                                                <i class="ri-whatsapp-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px] mr-1"></i> Quiero saber más
+                                                <i class="ri-whatsapp-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#555] leading-[10px] mr-1"></i> Quiero saber más
                                             </a>
                                         </div>                                        
                                     </div>

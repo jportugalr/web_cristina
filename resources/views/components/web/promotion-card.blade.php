@@ -18,7 +18,7 @@
 
             <span class="flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]">   
                      
-                <span class="text-xs text-[#777] font-medium uppercase">{{ $promotion->details->first()->product->category->name }}</span>
+                <span class="text-xs text-[#555] font-medium uppercase">{{ $promotion->details->first()->product->category->name }}</span>
             </span>
                         
 
@@ -52,8 +52,8 @@
             <div class="bb-pro-subtitle mb-[8px] flex flex-wrap justify-start">  
 
                     @foreach ($promotion->details->first()->product->tags as $tag)
-                        <a class="text-xs text-gray-300 font-extralight">  {{ $tag->tag->tag }}</a>
-                        <a class="text-xs text-gray-300 font-extralight ml-1 mr-1"> | </a>
+                        <a href="#pendiente" class="text-xs text-gray-300 font-extralight">  {{ $tag->tag->tag }}</a>
+                        <a href="#pendiente" class="text-xs text-gray-300 font-extralight ml-1 mr-1"> | </a>
                     @endforeach               
             </div>
 

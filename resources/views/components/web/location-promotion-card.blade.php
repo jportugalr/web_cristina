@@ -8,7 +8,7 @@
             
             <span class="flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]">   
                      
-                <span class="text-[9px] text-[#777] font-medium uppercase">{{ $promotion->details->first()->product->category->name }}</span>
+                <span class="text-[9px] text-[#555] font-medium uppercase">{{ $promotion->details->first()->product->category->name }}</span>
             </span>
             
 
@@ -37,7 +37,7 @@
             <ul class="bb-pro-actions transition-all duration-[0.3s] ease-in-out my-[0] mx-[auto] absolute z-[9] left-[0] right-[0] bottom-[0] flex flex-row items-center justify-center opacity-[0]">
                 <li class="bb-btn-group transition-all duration-[0.3s] ease-in-out h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#25D366] border-[1px] border-solid border-[#eee] rounded-[10px]">
                     <a href="{{ route('whatsapp',['id'=>2, 'producto'=>$promotion->name]) }}" target="_blank" title="Wishlist" class=" h-[35px] flex items-center justify-center ml-1 mr-1">
-                        <i class="ri-whatsapp-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#777] leading-[10px] mr-1"></i> Comprar
+                        <i class="ri-whatsapp-line transition-all duration-[0.3s] ease-in-out text-[18px] text-[#555] leading-[10px] mr-1"></i> Comprar
                     </a>
                 </li>
             </ul>
@@ -49,8 +49,8 @@
             <div class="bb-pro-subtitle mb-[8px] flex flex-wrap justify-start">  
 
                     @foreach ($promotion->details->first()->product->tags as $tag)
-                        <a class="text-[9px]">  {{ $tag->tag->tag }}</a>
-                        <a class="text-[9px] ml-1 mr-1"> | </a>
+                        <a href="#pendiente" class="text-[9px]">  {{ $tag->tag->tag }}</a>
+                        <a href="#pendiente" class="text-[9px] ml-1 mr-1"> | </a>
                     @endforeach               
             </div>
 
