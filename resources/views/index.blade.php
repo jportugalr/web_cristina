@@ -18,7 +18,7 @@
         <div class="bb-social-follow absolute left-[20px] bottom-[30px] max-[1250px]:hidden">
             <ul class="inner-links">
                 <li class="p-[6px] rotate-[270deg]">
-                    <a href="#pendiente" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[16px] font-medium text-[#555] hover:text-[#6c7fd8] leading-[28px] tracking-[0.03rem] uppercase">Rena Ware</a>
+                    <a href="#pendiente" aria-hidden="true" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[16px] font-medium text-[#555] hover:text-[#6c7fd8] leading-[28px] tracking-[0.03rem] uppercase">Rena Ware</a>
                 </li>
             </ul>
         </div>
@@ -129,7 +129,7 @@
         </div>
         <div class="bb-scroll-Page absolute right-[-15px] bottom-[75px] rotate-[270deg] max-[575px]:hidden">
             <span class="scroll-bar transition-all duration-[0.3s] ease-in-out relative max-[1250px]:hidden">
-                <a href="#pendiente" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[16px] font-medium leading-[28px] tracking-[0.03rem] text-[#686e7d]">Rena Ware</a>
+                <a href="#pendiente" aria-hidden="true" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[16px] font-medium leading-[28px] tracking-[0.03rem] text-[#686e7d]">Rena Ware</a>
             </span>
         </div>
     </section>
@@ -156,7 +156,7 @@
                                     <img src="{{ asset('assets/img/category/construccion.gif') }}" alt="rendimiento superior" class="w-[90%] h-[65px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-[10px] ">
                                 </div>
                                 <div class="category-sub-contact">
-                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="#pendiente" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Construcción y Diseño</a></h3>                                   
+                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="#pendiente" aria-hidden="true" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Construcción y Diseño</a></h3>                                   
                                 </div>
                             </div>
                             <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-2 bg-[#b7fad53f]  data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
@@ -164,7 +164,7 @@
                                     <img src="{{ asset('assets/img/category/superior.gif') }}" alt="rendimiento superior" class="w-[90%] h-[65px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-[10px] ">
                                 </div>
                                 <div class="category-sub-contact">
-                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="#pendiente" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Rendimiento Superior</a></h3>                                   
+                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="#pendiente" aria-hidden="true" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Rendimiento Superior</a></h3>                                   
                                 </div>
                             </div>
                             <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-3 bg-[#f3a06942] " data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
@@ -172,7 +172,7 @@
                                     <img src="{{ asset('assets/img/category/seguridad.gif') }}" alt="rendimiento superior" class="w-[90%] h-[65px] max-[1399px]:h-[65px] max-[1399px]:w-[65px] max-[1199px]:h-[50px] max-[1199px]:w-[50px] rounded-[10px] ">
                                 </div>
                                 <div class="category-sub-contact">
-                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="#pendiente" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Seguridad en Materiales</a></h3>                                   
+                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.2]"><a href="#pendiente" aria-hidden="true" class="font-Poppins text-[16px] font-medium leading-[1.2] tracking-[0.03rem] text-[#162c48] capitalize">Seguridad en Materiales</a></h3>                                   
                                 </div>
                             </div>
                             
@@ -297,7 +297,7 @@
                     <div class="bb-vendors-img sticky top-[0]">
                         <div class="tab-content">
                             <div class="tab-vendors-pane" id="vendors_tab_one">
-                                <a href="#pendiente" class="bb-vendor-init transition-all duration-[0.3s] ease-in-out absolute right-[20px] top-[20px] h-[35px] w-[35px] bg-[#00000080] hover:bg-[#000000cc] flex justify-center items-center rounded-[10px]">
+                                <a href="#pendiente" aria-hidden="true" class="bb-vendor-init transition-all duration-[0.3s] ease-in-out absolute right-[20px] top-[20px] h-[35px] w-[35px] bg-[#00000080] hover:bg-[#000000cc] flex justify-center items-center rounded-[10px]">
                                     <i class="ri-arrow-right-up-line text-[20px] text-[#fff]"></i>
                                 </a>
                                 <img src="{{asset('assets/img/vendors/img-1.jpg')}}" alt="vendors-img-1" class="w-full rounded-[30px] border-[1px] border-solid border-[#eee]">
@@ -307,7 +307,7 @@
                                 </div>
                             </div>
                             <div class="tab-vendors-pane" id="vendors_tab_two">
-                                <a href="#pendiente" class="bb-vendor-init transition-all duration-[0.3s] ease-in-out absolute right-[20px] top-[20px] h-[35px] w-[35px] bg-[#00000080] hover:bg-[#000000cc] flex justify-center items-center rounded-[10px]">
+                                <a href="#pendiente" aria-hidden="true" class="bb-vendor-init transition-all duration-[0.3s] ease-in-out absolute right-[20px] top-[20px] h-[35px] w-[35px] bg-[#00000080] hover:bg-[#000000cc] flex justify-center items-center rounded-[10px]">
                                     <i class="ri-arrow-right-up-line text-[20px] text-[#fff]"></i>
                                 </a>
                                 <img src="{{asset('assets/img/vendors/img-2')}}.jpg" alt="vendors-img-2" class="w-full rounded-[30px] border-[1px] border-solid border-[#eee]">
@@ -317,7 +317,7 @@
                                 </div>
                             </div>
                             <div class="tab-vendors-pane" id="vendors_tab_three">
-                                <a href="#pendiente" class="bb-vendor-init transition-all duration-[0.3s] ease-in-out absolute right-[20px] top-[20px] h-[35px] w-[35px] bg-[#00000080] hover:bg-[#000000cc] flex justify-center items-center rounded-[10px]">
+                                <a href="#pendiente" aria-hidden="true" class="bb-vendor-init transition-all duration-[0.3s] ease-in-out absolute right-[20px] top-[20px] h-[35px] w-[35px] bg-[#00000080] hover:bg-[#000000cc] flex justify-center items-center rounded-[10px]">
                                     <i class="ri-arrow-right-up-line text-[20px] text-[#fff]"></i>
                                 </a>
                                 <img src="{{asset('assets/img/vendors/img-3')}}.jpg" alt="vendors-img-3" class="w-full rounded-[30px] border-[1px] border-solid border-[#eee]">
@@ -327,7 +327,7 @@
                                 </div>
                             </div>
                             <div class="tab-vendors-pane" id="vendors_tab_four">
-                                <a href="#pendiente" class="bb-vendor-init transition-all duration-[0.3s] ease-in-out absolute right-[20px] top-[20px] h-[35px] w-[35px] bg-[#00000080] hover:bg-[#000000cc] flex justify-center items-center rounded-[10px]">
+                                <a href="#pendiente" aria-hidden="true" class="bb-vendor-init transition-all duration-[0.3s] ease-in-out absolute right-[20px] top-[20px] h-[35px] w-[35px] bg-[#00000080] hover:bg-[#000000cc] flex justify-center items-center rounded-[10px]">
                                     <i class="ri-arrow-right-up-line text-[20px] text-[#fff]"></i>
                                 </a>
                                 <img src="{{asset('assets/img/vendors/img-4')}}.jpg" alt="vendors-img-4" class="w-full rounded-[30px] border-[1px] border-solid border-[#eee]">

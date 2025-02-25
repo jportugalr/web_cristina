@@ -145,7 +145,7 @@
                             <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                 @foreach($departamento->provincias as $provincia)
                                     <li class="text-center">
-                                        <a href="{{ route('location.provincia', ['departamentoSlug' => $departamento->slug, 'provinciaSlug' => $provincia->slug]) }}" 
+                                        <a aria-hidden="true" href="{{ route('location.provincia', ['departamentoSlug' => $departamento->slug, 'provinciaSlug' => $provincia->slug]) }}" 
                                             class="font-medium text-sm py-3 px-6 rounded-lg  hover:text-blue-600 transition">
                                             {{ $provincia->nombre }}
                                         </a>

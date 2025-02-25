@@ -25,7 +25,7 @@
                     <div class="flex flex-wrap w-full bb-breadcrumb-inner m-[0] py-[20px] items-center">
                         <div class="min-[768px]:w-[50%] min-[576px]:w-full w-full px-[12px]">
                             
-                            <h2 class="bb-breadcrumb-title font-quicksand tracking-[0.03rem] leading-[1.2] text-[16px] font-bold text-[#3d4750] max-[767px]:text-center max-[767px]:mb-[10px]">Todos los Products</h2>
+                            <h2 class="bb-breadcrumb-title font-quicksand tracking-[0.03rem] leading-[1.2] text-[16px] font-bold text-[#3d4750] max-[767px]:text-center max-[767px]:mb-[10px]">Todos los Productos</h2>
                             
                         </div>
                         <div class="min-[768px]:w-[50%] min-[576px]:w-full w-full px-[12px]">

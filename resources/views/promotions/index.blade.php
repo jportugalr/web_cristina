@@ -51,7 +51,7 @@
                     <div class="flex flex-wrap w-full px-[12px]">
                         <ul class="bb-shop-tags w-full flex flex-wrap justify-center m-[-5px]">
                             <li class="active-tags m-[5px]">
-                                <a href="#pendiente" class="flex bg-[#fff] rounded-[15px] border-[1px] border-solid border-[#eee] py-[10px] px-[20px] transition-all duration-[0.3s] ease-in-out font-Poppins text-[15px] text-[#686e7d] font-normal leading-[28px] tracking-[0.03rem] hover:text-[#6c7fd8] hover:border-[#6c7fd8]">Estas viendo: {{ $promotions->first()->catalog->name }}</a>
+                                <a aria-hidden="true" href="#pendiente" class="flex bg-[#fff] rounded-[15px] border-[1px] border-solid border-[#eee] py-[10px] px-[20px] transition-all duration-[0.3s] ease-in-out font-Poppins text-[15px] text-[#686e7d] font-normal leading-[28px] tracking-[0.03rem] hover:text-[#6c7fd8] hover:border-[#6c7fd8]">Estas viendo: {{ $promotions->first()->catalog->name }}</a>
                             </li>
                         </ul>
                     </div>

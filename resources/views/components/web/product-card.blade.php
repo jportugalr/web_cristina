@@ -35,8 +35,8 @@
         <div class="bb-pro-contact p-[20px]">
             <div class="bb-pro-subtitle mb-[8px] flex flex-wrap justify-start">                                
                 @foreach ($product->tags as $tag)
-                    <a href="#pendiente" class="text-xs">  {{ $tag->tag->tag }}</a>
-                    <a href="#pendiente" class="text-xs ml-1 mr-1"> | </a>
+                    <a href="#pendiente" aria-hidden="true" class="text-xs">  {{ $tag->tag->tag }}</a>
+                    <a href="#pendiente" aria-hidden="true" class="text-xs ml-1 mr-1"> | </a>
                 @endforeach               
             </div>
 

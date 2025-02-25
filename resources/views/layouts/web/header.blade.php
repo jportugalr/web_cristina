@@ -50,7 +50,7 @@
                                     <form class="bb-btn-group-form flex relative max-[991px]:ml-[20px] max-[767px]:m-[0]" action="/buscar" method="get">
                                         <div class="inner-select border-r-[1px] border-solid border-[#eee] h-full px-[20px] flex items-center absolute top-[0] left-[0] max-[991px]:hidden">
                                             <div class="custom-select w-[100px] capitalize text-[#555] flex items-center justify-between transition-all duration-[0.2s] ease-in text-[14px] relative">
-                                                <a href="#pendiente">Productos</a>
+                                                <a aria-hidden="true" href="#pendiente">Productos</a>
                                             </div>
                                         </div>
                                         <input class="form-control bb-search-bar bg-[#fff] block w-full min-h-[45px] h-[48px] py-[10px] pr-[10px] pl-[160px] max-[991px]:min-h-[40px] max-[991px]:h-[40px] max-[991px]:p-[10px] text-[14px] font-normal leading-[1] text-[#555] rounded-[10px] border-[1px] border-solid border-[#eee] tracking-[0.5px]" placeholder="Busca aqui..." type="text"name="q">
@@ -70,7 +70,7 @@
                                         </div>
 
                                        
-                                        <a href="#pendiente" class="bb-toggle-menu hidden max-[991px]:flex max-[991px]:ml-[20px]">
+                                        <a aria-hidden="true" href="#pendiente" class="bb-toggle-menu hidden max-[991px]:flex max-[991px]:ml-[20px]">
                                             <div class="header-icon">
                                                 <i class="ri-menu-3-fill text-[22px] text-[#6c7fd8]"></i>
                                             </div>

@@ -28,7 +28,7 @@
                                 <li class="text-[14px] font-normal px-[5px]"><i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i></li>
                                 <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active "><a href="{{ route('promociones.index',['slug'=>$promotion->catalog->slug]) }}">{{ $promotion->catalog->name }}</a></li>
                                 <li class="text-[14px] font-normal px-[5px]"><i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i></li>
-                                <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active "><a href="#pendiente">{{ $promotion->name }}</a></li>
+                                <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active "><a aria-hidden="true" href="#pendiente">{{ $promotion->name }}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                         <div class="bb-pro-tab mb-[24px]">
                             <ul class="bb-pro-tab-nav flex flex-wrap mx-[-20px] max-[991px]:justify-center" id="ProTab">
                                 <li class="nav-item relative leading-[28px]">
-                                    <a href="#pendiente" class="nav-link px-[20px] font-Poppins text-[16px] text-[#686e7d] font-medium capitalize leading-[28px] tracking-[0.03rem] block active" href="#detail">Detalle de la promoción</a>
+                                    <a aria-hidden="true" href="#pendiente" class="nav-link px-[20px] font-Poppins text-[16px] text-[#686e7d] font-medium capitalize leading-[28px] tracking-[0.03rem] block active" href="#detail">Detalle de la promoción</a>
                                 </li>
                             </ul>
                         </div>
