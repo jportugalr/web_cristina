@@ -267,7 +267,7 @@
     </section>
 
     <!-- Banner-two -->
-    <section class="section-banner-two my-[50px] max-[1199px]:my-[35px] bg-[url('{{ asset('assets/img/banner-two/banner.jpg') }}')] min-h-[600px] overflow-hidden bg-no-repeat bg-cover bg-center max-[991px]:max-h-[400px] max-[991px]:min-h-[auto]">
+    <section class="section-banner-two my-[50px] max-[1199px]:my-[35px] bg-[url('{{ asset('assets/img/banner-two/banner.webp') }}')] min-h-[600px] overflow-hidden bg-no-repeat bg-cover bg-center max-[991px]:max-h-[400px] max-[991px]:min-h-[auto]">
         <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full">
                 <div class="w-full px-[12px] banner-justify-box-contact h-[600px] flex justify-end items-end max-[991px]:h-[400px]">
