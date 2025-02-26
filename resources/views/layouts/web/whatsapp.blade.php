@@ -1,4 +1,4 @@
-<a href="{{ route('whatsapp', ['id' => 3]) }}" target="_blank" rel="noreferrer noopener" class="fixed bottom-4 right-4 z-50 flex items-center gap-2">
+<a href="{{ route('whatsapp', ['id' => 3]) }}" target="_blank" rel="noreferrer noopener" arial-label="Busca aqui" class="fixed bottom-4 right-4 z-50 flex items-center gap-2">
     <!-- Mensaje emergente -->
     <div class="hidden md:block bg-white text-[#25d366] text-lg font-semibold py-2 px-3 rounded-lg shadow-lg animate-fadeIn">
         📢 ¡Consulta nuestras ofertas!
@@ -34,11 +34,26 @@
 
 <!-- Animación CSS -->
 <style>
-    @keyframes fadeIn {
-        0% { opacity: 0; transform: translateX(10px); }
-        100% { opacity: 1; transform: translateX(0); }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate3d(10px, 0, 0);
     }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+    will-change: opacity, transform;
+}
+
+/* Respeto a usuarios con reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
     .animate-fadeIn {
-        animation: fadeIn 1s ease-out forwards;
+        animation: none;
     }
+}
 </style>

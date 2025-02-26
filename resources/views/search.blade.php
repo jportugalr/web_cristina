@@ -7,7 +7,7 @@
 
     <meta property="og:title" content="Resultados para '{{ request('q') }}' | Rena Ware Perú">
     <meta property="og:description" content="Encuentra los mejores productos y artículos relacionados con '{{ request('q') }}' en Rena Ware Perú.">
-    <meta property="og:image" content="{{ asset('images/og-image-search.jpg') }}">  
+    <meta property="og:image" content="{{ asset('images/og-image-search.webp') }}">  
     <meta name="robots" content="noindex, follow">  
 @endsection
 

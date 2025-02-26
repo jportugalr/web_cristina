@@ -11,10 +11,12 @@
             <ul class="bb-pro-actions transition-all duration-[0.3s] my-[0] mx-[auto] absolute z-[9] left-[0] right-[0] bottom-[0] flex flex-row items-center justify-center opacity-[1]">
                 <li class="bb-btn-group transition-all duration-[0.3s]  h-[35px] mx-[2px] flex items-center justify-center text-[#fff] bg-[#25D366] border-[1px] border-solid border-[#eee] rounded-[10px]">
                     <a href="{{ route('whatsapp',['id'=>2, 'producto'=>$promotion->name]) }}" target="_blank" title="Wishlist" class="text-lg h-[35px] flex items-center justify-center ml-1 mr-1">
-                        <i class="ri-whatsapp-line transition-all duration-[0.3s]  text-[20px] text-[#fff] leading-[10px] mr-2"></i> Consulta disponibilidad
+                        <i class="ri-whatsapp-line transition-all duration-[0.3s]  text-[20px] text-[#fff] leading-[10px] mr-2"></i> 
+                        <span>Consulta</span>
                     </a>
                 </li>
             </ul>
+
 
             <span class="flags transition-all duration-[0.3s] ease-in-out absolute z-[5] top-[10px] left-[6px]">   
                      
@@ -52,8 +54,8 @@
             <div class="bb-pro-subtitle mb-[8px] flex flex-wrap justify-start">  
 
                     @foreach ($promotion->details->first()->product->tags as $tag)
-                        <a aria-hidden="true" href="#pendiente" class="text-xs text-gray-300 font-extralight">  {{ $tag->tag->tag }}</a>
-                        <a aria-hidden="true" href="#pendiente" class="text-xs text-gray-300 font-extralight ml-1 mr-1"> | </a>
+                        <span class="text-xs text-[#555] font-extralight">  {{ $tag->tag->tag }}</a>
+                        <span class="text-xs text-[#555] font-extralight ml-1 mr-1"> | </a>
                     @endforeach               
             </div>
 

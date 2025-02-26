@@ -49,8 +49,8 @@
             <div class="bb-pro-subtitle mb-[8px] flex flex-wrap justify-start">  
 
                     @foreach ($promotion->details->first()->product->tags as $tag)
-                        <a href="#pendiente" aria-hidden="true" class="text-[9px]">  {{ $tag->tag->tag }}</a>
-                        <a href="#pendiente" aria-hidden="true" class="text-[9px] ml-1 mr-1"> | </a>
+                        <span href="#pendiente" aria-hidden="true" class="text-[9px]">  {{ $tag->tag->tag }}</span>
+                        <span href="#pendiente" aria-hidden="true" class="text-[9px] ml-1 mr-1"> | </span>
                     @endforeach               
             </div>
 

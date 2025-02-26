@@ -7,7 +7,7 @@
 
     <meta property="og:title" content="Contáctanos | Rena Ware Perú">
     <meta property="og:description" content="Comunícate con nosotros para resolver tus dudas sobre productos, promociones y oportunidades de negocio con Rena Ware.">
-    <meta property="og:image" content="{{ asset('images/og-image-contact.jpg') }}">    
+    <meta property="og:image" content="{{ asset('images/og-image-contact.webp') }}">    
 @endsection
 
 @section('content')
@@ -26,7 +26,7 @@
                             <ul class="bb-breadcrumb-list mx-[-5px] flex justify-end max-[767px]:justify-center">
                                 <li class="bb-breadcrumb-item text-[14px] font-normal px-[5px]"><a href="{{ route('inicio') }}" class="font-Poppins text-[14px] leading-[28px] tracking-[0.03rem] font-semibold text-[#686e7d]">Inicio</a></li>
                                 <li class="text-[14px] font-normal px-[5px]"><i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i></li>
-                                <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active "><a aria-hidden="true" href="#pendiente">Contáctanos</a></li>
+                                <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active ">Contáctanos</li>
                             </ul>
                         </div>
                     </div>

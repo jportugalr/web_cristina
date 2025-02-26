@@ -7,7 +7,7 @@
     <meta name="keywords" content="Utensilios de Cocina, Rena Ware Perú, Productos Saludables, Filtros de Agua, Nutrex Press, Cocina de Inducción">
     <meta property="og:title" content="Productos Rena Ware Perú | Innovación para Tu Cocina">
     <meta property="og:description" content="Descubre productos de cocina de alta calidad con tecnología Nutri-Plex™ y sistemas avanzados de filtración de agua.">
-    <meta property="og:image" content="{{ asset('images/og-image-products.jpg') }}">
+    <meta property="og:image" content="{{ asset('images/og-image-products.webp') }}">
     
 
 @endsection

@@ -11,7 +11,7 @@
 <meta property="og:title" content="Rena Ware en {{$provincia->nombre}}, {{$provincia->departamento->nombre}} | Beneficios y Productos">
 <meta property="og:description" content="Descubre los beneficios de Rena Ware en {{$provincia->nombre}}, {{$provincia->departamento->nombre}}. Encuentra productos exclusivos y promociones.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="{{ asset('images/og-image-location.jpg') }}">
+<meta property="og:image" content="{{ asset('images/og-image-location.webp') }}">
     
     
 @endsection
@@ -35,7 +35,7 @@
                                 <li class="text-[14px] font-normal px-[5px]"><i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i></li>
                                 <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active "><a href="{{ route('location.departamento',['slug' => $provincia->departamento->nombre]) }}">{{ $provincia->departamento->nombre }}</a></li>
                                 <li class="text-[14px] font-normal px-[5px]"><i class="ri-arrow-right-double-fill text-[14px] font-semibold leading-[28px]"></i></li>
-                                <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active "><a href="#pendiente">{{ $provincia->nombre }}</a></li>
+                                <li class="bb-breadcrumb-item font-Poppins text-[#686e7d] text-[14px] leading-[28px] font-normal tracking-[0.03rem] px-[5px] active ">{{ $provincia->nombre }}</li>
                             </ul>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                     <div class="bb-blog-details-contact" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         
                         <!-- Imagen Superior -->
-                        <div class="inner-blog-details-image mb-[24px] relative w-full h-64 md:h-96 bg-cover bg-center rounded-[15px]" style="background-image: url('{{ asset("assets/img/locations/general.jpg") }}');">
+                        <div class="inner-blog-details-image mb-[24px] relative w-full h-64 md:h-96 bg-cover bg-center rounded-[15px]" style="background-image: url('{{ asset("assets/img/locations/general.webp") }}');">
                             <div class="rounded-[15px] absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                                 <h1 class="text-white text-3xl md:text-5xl font-bold">{{ $provincia->nombre }}</h1>
                             </div>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="bb-comment-box flex mb-[24px] max-[575px]:flex-col">
                                 <div class="inner-image mr-[15px] max-[575px]:mr-[0] max-[575px]:mb-[15px]">
-                                    <img src="assets/img/reviews/1.jpg" alt="reviews-1" class="w-[50px] rounded-[15px]">
+                                    <img src="assets/img/reviews/1.webp" alt="reviews-1" class="w-[50px] rounded-[15px]">
                                 </div>
                                 <div class="inner-contact flex flex-col justify-center">
                                     <h5 class="sub-title font-quicksand tracking-[0.03rem] leading-[1.2] mb-[4px] text-[16px] font-bold text-[#3d4750]">Mariya Lykra</h5>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="bb-comment-box second flex mb-[24px] max-[575px]:flex-col pl-[50px]">
                                 <div class="inner-image mr-[15px] max-[575px]:mr-[0] max-[575px]:mb-[15px]">
-                                    <img src="assets/img/reviews/2.jpg" alt="reviews-1" class="w-[50px] rounded-[15px]">
+                                    <img src="assets/img/reviews/2.webp" alt="reviews-1" class="w-[50px] rounded-[15px]">
                                 </div>
                                 <div class="inner-contact flex flex-col justify-center">
                                     <h5 class="sub-title font-quicksand tracking-[0.03rem] leading-[1.2] mb-[4px] text-[16px] font-bold text-[#3d4750]">Saddika Alard</h5>

@@ -7,7 +7,7 @@
 
     <meta property="og:title" content="FAQ Rena Ware Perú | Responde tus Dudas">
     <meta property="og:description" content="Consulta las preguntas más frecuentes sobre nuestros productos, políticas de garantía, métodos de pago y más.">
-    <meta property="og:image" content="{{ asset('images/og-image-faq.jpg') }}">    
+    <meta property="og:image" content="{{ asset('images/og-image-faq.webp') }}">    
 
     <script type="application/ld+json">
         {

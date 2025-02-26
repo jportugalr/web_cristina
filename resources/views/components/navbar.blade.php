@@ -58,16 +58,16 @@
                 <div class="header-top-social">
                     <ul class="flex flex-row justify-center mb-[0]">
                         <li class="list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]">
-                            <a aria-hidden="true" href="#pendiente" class="transition-all duration-[0.3s] ease-in-out"><i class="ri-facebook-fill text-[#fff] text-[15px]"></i></a>
+                            <span aria-hidden="true" href="#pendiente" class="transition-all duration-[0.3s] ease-in-out"><i class="ri-facebook-fill text-[#fff] text-[15px]"></i></span>
                         </li>
                         <li class="list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]">
-                            <a aria-hidden="true" href="#pendiente" class="transition-all duration-[0.3s] ease-in-out"><i class="ri-twitter-fill text-[#fff] text-[15px]"></i></a>
+                            <span aria-hidden="true" href="#pendiente" class="transition-all duration-[0.3s] ease-in-out"><i class="ri-twitter-fill text-[#fff] text-[15px]"></i></span>
                         </li>
                         <li class="list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px] mr-[.5rem]">
-                            <a aria-hidden="true" href="#pendiente" class="transition-all duration-[0.3s] ease-in-out"><i class="ri-instagram-line text-[#fff] text-[15px]"></i></a>
+                            <span aria-hidden="true" href="#pendiente" class="transition-all duration-[0.3s] ease-in-out"><i class="ri-instagram-line text-[#fff] text-[15px]"></i></span>
                         </li>
                         <li class="list-inline-item w-[30px] h-[30px] flex items-center justify-center bg-[#3d4750] rounded-[10px]">
-                            <a aria-hidden="true" href="#pendiente" class="transition-all duration-[0.3s] ease-in-out"><i class="ri-linkedin-fill text-[#fff] text-[15px]"></i></a>
+                            <span aria-hidden="true" href="#pendiente" class="transition-all duration-[0.3s] ease-in-out"><i class="ri-linkedin-fill text-[#fff] text-[15px]"></i></span>
                         </li>
                     </ul>
                 </div>
