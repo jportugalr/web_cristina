@@ -100,7 +100,7 @@
             <div class="flex flex-wrap w-full mb-[-24px]">
                 <div class="min-[992px]:w-[41.66%] w-full px-[12px] mb-[24px]">
                     <div class="bb-category-img relative max-[991px]:hidden">
-                        <img src="{{ asset('assets/img/category/category.webp') }}" alt="category" class="w-full rounded-[30px]">
+                        <img  loading="lazy" src="{{ asset('assets/img/category/category.webp') }}" alt="category" class="w-full rounded-[30px]">
                         
                     </div>
                 </div>
