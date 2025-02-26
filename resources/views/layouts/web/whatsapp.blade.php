@@ -1,6 +1,6 @@
 <a href="{{ route('whatsapp', ['id' => 3]) }}" target="_blank" rel="noreferrer noopener" arial-label="Busca aqui" class="fixed bottom-4 right-4 z-50 flex items-center gap-2">
     <!-- Mensaje emergente -->
-    <div class="hidden md:block bg-white text-[#25d366] text-lg font-semibold py-2 px-3 rounded-lg shadow-lg animate-fadeIn">
+    <div class="hidden md:block bg-white text-[#128c7e] text-lg font-semibold py-2 px-3 rounded-lg shadow-lg animate-fadeIn">
         📢 ¡Consulta nuestras ofertas!
     </div>
     
