@@ -35,7 +35,7 @@
                                     <div class="min-[992px]:w-[50%] w-full px-[12px] min-[992px]:order-2 order-1 mb-[24px]">
                                         <div class="video-container hero-image pr-[50px] relative max-[991px]:px-[50px] max-[575px]:px-[30px] flex justify-center max-[420px]:p-[0]">
                                             
-                                            <script src="{{ asset('assets/js/vendor/player.js')}}" async></script>
+                                            <script src="{{ asset('assets/js/vendor/player.js')}}" defer></script>
                                             <script src="{{ asset('assets/js/vendor/zaxon6nvmv.js')}}" defer type="module"></script>
                                             <style>wistia-player[media-id='zaxon6nvmv']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/zaxon6nvmv/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style> 
                                             <wistia-player autoplay="false" media-id="zaxon6nvmv" seo="false" aspect="1.7777777777777777"></wistia-player>
