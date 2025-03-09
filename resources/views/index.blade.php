@@ -94,63 +94,28 @@
         </div>
     </section>
 
-    <!-- Category -->
-    <section class="section-category overflow-hidden py-[50px] max-[1199px]:py-[35px]">
-        <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
-            <div class="flex flex-wrap w-full mb-[-24px]">
-                <div class="min-[992px]:w-[41.66%] w-full px-[12px] mb-[24px]">
-                    <div class="bb-category-img relative max-[991px]:hidden">
-                        <img  loading="lazy" src="{{ asset('assets/img/category/category.webp') }}" alt="category" class="w-full rounded-[30px]">
-                        
-                    </div>
+    <section class="nsf-certification">
+        <div class="container">
+            <div class="certification-header">
+                <img src="{{ asset('assets/img/category/category.webp') }}" alt="Certificación NSF P-390" class="certification-image w-[30%] max-[1280px]:w-[40%] max-[992px]:w-[50%] max-[767px]:w-[70%] ">
+                <div class="certification-text">
+                    <h2>Certificación NSF P-390</h2>
+                    <p>La certificación NSF P-390 garantiza que los productos Rena Ware cumplen con los más altos estándares de seguridad, durabilidad y calidad en la cocina.</p>
                 </div>
-                <div class="min-[992px]:w-[58.33%] w-full px-[12px] mb-[24px]">
-                    <div class="bb-category-contact max-[991px]:mt-[-24px]">
-                        <div class="category-title mb-[30px] max-[991px]:hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                            <h2 class="font-quicksand text-justify text-[124px] text-[#fff] opacity-[1] font-bold leading-[1.2] tracking-[0.03rem] max-[1399px]:text-[95px] max-[1199px]:text-[70px] max-[767px]:text-[42px]">Certificación NSF P - 390</h2>
-                        </div>
-                        <div class="bb-category-block owl-carousel ml-[-150px] w-[calc(100%+150px)] pt-[30px] pl-[30px] bg-[#fff] rounded-tl-[30px] relative max-[991px]:ml-[0] max-[991px]:w-full max-[991px]:p-[0]">
-                            
-                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-1 bg-[#1b479921] " data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">
-                                <div class=" mb-[12px]">                                                                            
-                                    <video autoplay="true" alt="rendimiento superior" class=" rounded-[10px] ">
-                                        <source src="{{ asset('assets/img/category/construccion.webm') }}" type="video/webm">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="category-sub-contact">
-                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.35]">
-                                    Construcción y Diseño</h3>                                   
-                                </div>
-                            </div>
-                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-2 bg-[#b7fad53f]  data-aos="flip-left" data-aos-duration="1000" data-aos-delay="400">
-                                <div class="category-image mb-[12px]">
-                                    <video autoplay="true" alt="rendimiento superior" class=" rounded-[10px] ">
-                                        <source src="{{ asset('assets/img/category/superior.webm') }}" type="video/webm">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="category-sub-contact">
-                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.35]">
-                                        Rendimiento Superior</h3>                                   
-                                </div>
-                            </div>
-                            <div class="bb-category-box p-[30px] rounded-[20px] flex flex-col items-center text-center max-[1399px]:p-[20px] category-items-3 bg-[#f3a06942] " data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
-                                <div class="category-image mb-[12px]">
-                                    <video autoplay="true" alt="rendimiento superior" class=" rounded-[10px] ">
-                                        <source src="{{ asset('assets/img/category/seguridad.webm') }}" type="video/webm">
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
-                                <div class="category-sub-contact">
-                                    <h3 class="mb-[2px] text-[16px] font-quicksand text-[#162c48] font-semibold tracking-[0.03rem] leading-[1.35]">
-                                    Seguridad en Materiales</h3>                                   
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+            </div>
+            
+            <div class="certification-benefits max-[1025px]:hidden">
+                <div class="benefit-card">
+                    <img src="{{ asset('assets/img/category/construccion.webp') }}" alt="Construcción y Diseño" class="benefit-image w-[60%]">
+                    <h3>Construcción y Diseño</h3>
+                </div>
+                <div class="benefit-card">
+                    <img src="{{ asset('assets/img/category/superior.webp') }}" alt="Rendimiento Superior" class="benefit-image w-[60%]">
+                    <h3>Rendimiento Superior</h3>
+                </div>
+                <div class="benefit-card">
+                    <img src="{{ asset('assets/img/category/seguridad.webp') }}" alt="Seguridad en Materiales" class="benefit-image w-[60%]">
+                    <h3>Seguridad en Materiales</h3>
                 </div>
             </div>
         </div>

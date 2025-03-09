@@ -2366,5 +2366,82 @@ ul#ProTab li.active a {
   color: #686e7d;
 }
 
+.nsf-certification {
+  background-color: #f8f8fb;
+  padding: 40px 20px;
+  text-align: center;
+}
 
+.certification-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.certification-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.certification-text h2 {
+  font-size: 2rem;
+  color: #162c48;
+  margin-top: 15px;
+}
+
+.certification-text p {
+  font-size: 1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.certification-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.benefit-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 30%;  /* Hace que sean 3 en una fila */ 
+  max-width: 300px;
+}
+
+.benefit-image {  
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  justify-self: center;
+}
+
+.benefit-card h3 {
+  font-size: 1rem;
+  color: #162c48;
+  margin-top: 10px;
+}
+
+.benefit-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .certification-benefits {
+      flex-direction: column;
+      align-items: center;
+  }
+  .benefit-card {
+      width: 80%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
