@@ -2,22 +2,22 @@
     <header class="bb-header relative z-[5] border-b-[1px] border-solid border-[#eee]">
         
         <!-- top bar-->
-        <div class="top-header bg-[#3d4750] py-[6px] max-[991px]:hidden">
+        <div class="top-header bg-[#3d4750] py-[6px] ">
             <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
                 <div class="flex flex-wrap w-full">
                     <div class="w-full px-[12px]">
-                        <div class="inner-top-header flex justify-between">
+                        <div class="inner-top-header flex justify-between max-[768px]:justify-center">
                             <!--barra izquierda-->
-                            <div class="col-left-bar">
+                            <div class="col-left-bar max-[768px]:hidden">
                                 <a href="{{ route('whatsapp', ['id' =>4]) }}" target="_blank"class="transition-all duration-[0.3s] ease-in-out font-Poppins font-light text-[14px] text-[#fff] leading-[28px] tracking-[0.03rem]">Escribenos al WhatsApp</a>
                             </div>
                             
                             <!--barra derecha-->
                             <div class="col-right-bar flex">
                                 <div class="cols px-[12px]">
-                                    <a href="{{ route('faq') }}" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] font-light leading-[28px] tracking-[0.03rem]">Preguntas Frecuentes</a>
+                                    <a href="{{ route('faq') }}" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] font-light leading-[28px] tracking-[0.03rem] max-[768px]:font-medium">Preguntas Frecuentes</a>
                                 </div>
-                                <div class="cols px-[12px]">                                    
+                                <div class="cols px-[12px] max-[768px]:hidden">                                    
                                     <a href="{{ route('contacto') }}" class="transition-all duration-[0.3s] ease-in-out font-Poppins text-[14px] text-[#fff] font-light leading-[28px] tracking-[0.03rem]">Contacto</a>
                                 </div>
                             </div>
