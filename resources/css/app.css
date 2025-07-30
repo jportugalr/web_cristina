@@ -1,3 +1,15 @@
+/* Vendor styles */
+@import "../../public/assets/css/vendor/remixicon.css";
+@import "../../public/assets/css/vendor/aos.css";
+@import "../../public/assets/css/vendor/swiper-bundle.min.css";
+@import "../../public/assets/css/vendor/owl.carousel.min.css";
+@import "../../public/assets/css/vendor/slick.min.css";
+@import "../../public/assets/css/vendor/animate.min.css";
+@import "../../public/assets/css/vendor/jquery-range-ui.css";
+
+/* Main template style */
+@import "../../public/assets/css/style.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
