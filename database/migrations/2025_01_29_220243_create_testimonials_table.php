@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('job');
             $table->text('content');
             $table->string('url');
-            $table->int('status');
+            $table->integer('status');
             $table->timestamps();
         });
     }

@@ -23,13 +23,19 @@ class AppServiceProvider extends ServiceProvider
 
     public function boot()
     {
+        // Avoid database calls when running in console, such as during tests
+        if ($this->app->runningInConsole()) {
+            View::share('tags', collect());
+            return;
+        }
+
         if (!Session::has('tags')) {
             Session::put('tags', Tag::all());
         }
-    
+
         // Compartir los tags con todas las vistas
         View::share('tags', Session::get('tags'));
-        
+
     }
     /*
     public function boot(): void
