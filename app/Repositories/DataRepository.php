@@ -10,6 +10,7 @@ use App\Models\Faq;
 use App\Models\Tag;
 use App\Models\Article;
 use App\Services\ModelCacheService;
+use Illuminate\Support\Facades\Cache; 
 
 class DataRepository
 {
@@ -127,15 +128,15 @@ class DataRepository
     }
 
     // Obtiene una promoción activa por su slug
-    public function getActivePromotionBySlug($slug)
+    public function getActivePromotionBySlug(string $slug)
     {
+        $key = "promotion:by-slug:{$slug}";
         return $this->cacheService->getCached(
             Promotion::class,
-            ['details', 'details.product.tags', 'catalog', 'images'],
-            [['status', 1]],
-            [['slug', $slug]],
-            'promotion.$slug',
-            60*24 // 1 día
+            [], // Puedes agregar relaciones si las necesitas, por ejemplo: ['details', 'catalog', ...]
+            [['slug', $slug], ['status', 1]],
+            $key,
+            60 * 24 * 2
         )->first();
     }
 
