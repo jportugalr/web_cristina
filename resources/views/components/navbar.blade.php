@@ -2,12 +2,28 @@
 @php
     $navLinks = [
         ['url' => route('inicio'), 'label' => 'Inicio','pattern'=>'inicio'],
-        ['url' => route('productos.index'), 'label' => 'Productos', 'pattern' => 'productos*'],
-        ['url' => '/promociones/especiales-bienvenido-2025', 'label' => 'Descuentos Especiales', 'pattern'=>'promociones/especiales-bienvenido-2025*'],
-        ['url' => '/promociones/flash-verano', 'label' => '6 Meses sin Intereses', 'pattern'=>'promociones/flash-verano*'],
-        ['url' => route('blog.index'), 'label' => 'Blog', 'pattern' => 'blog*'],
         ['url' => route('nosotros'), 'label' => 'Nosotros', 'pattern' => 'nosotros*'],
+        ['url' => route('blog.index'), 'label' => 'Blog', 'pattern' => 'blog*'],
+        ['url' => route('productos.index'), 'label' => 'Productos', 'pattern' => 'productos*'],        
     ];
+    // Unificamos los catálogos como enlaces adicionales
+    $catalogLinks = collect($catalogs ?? [])->map(function($catalog) {
+        return [
+            'url' => route('promociones.index', ['slug' => $catalog->slug]),
+            'label' => $catalog->name,
+            'pattern' => 'promociones/'.$catalog->slug.'*',
+        ];
+    });
+    $allLinks = collect($navLinks)->concat($catalogLinks);
+    function nav_link_class($pattern, $base = false) {
+        $active = Request::is($pattern);
+        $baseClass = $base
+            ? 'nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[28px] text-[15px] font-medium  block tracking-[0.03rem]'
+            : 'nav-link transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]';
+        $activeClass = 'text-decoration-line: underline text-[#113555] font-extrabold bg-gray-100';
+        $inactiveClass = 'text-[#3d4750] hover:text-white';
+        return ($active ? $activeClass : $inactiveClass) . ' ' . $baseClass;
+    }
 @endphp
 
 <div class="bb-main-menu-desk bg-[#fff] py-[5px] border-t-[1px] border-solid border-[#eee] max-[991px]:hidden">
@@ -17,13 +33,11 @@
                 <div class="bb-inner-menu-desk flex max-[1199px]:relative max-[991px]:justify-between">
                     <div class="bb-main-menu relative flex flex-[auto] justify-start max-[991px]:hidden" id="navbarSupportedContent">                        
                         <ul class="navbar-nav flex flex-wrap flex-row ">
-                            @foreach ($navLinks as $link)                               
-
+                            @foreach ($allLinks as $link)
                                 <li class="nav-item bb-dropdown flex items-center relative mr-[45px]">
-                                    <a class=" {{ Request::is($link['pattern']) ? 'text-decoration-line: underline text-[#113555] font-extrabold bg-gray-100' : 'text-[#3d4750] hover:text-white' }} nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[28px] text-[15px] font-medium  block tracking-[0.03rem]" href="{{ $link['url'] }}">{{ $link['label'] }}</a>
+                                    <a class="{{ nav_link_class($link['pattern'], true) }}" href="{{ $link['url'] }}">{{ $link['label'] }}</a>
                                 </li>
                             @endforeach
-
                         </ul>
                     </div>                           
                 </div>
@@ -42,14 +56,11 @@
     <div class="bb-menu-inner">
         <div class="bb-menu-content">
             <ul>
-
-                @foreach ($navLinks as $link)                               
-
-                                <li class="relative">
-                                    <a class=" {{ Request::is($link['pattern']) ? 'text-decoration-line: underline text-[#113555] font-extrabold bg-gray-100' : 'text-[#3d4750] hover:text-white' }} nav-link transition-all duration-[0.3s] ease-in-out mb-[12px] p-[12px] block font-Poppins capitalize text-[#686e7d] border-[1px] border-solid border-[#eee] rounded-[10px] text-[15px] font-medium leading-[28px] tracking-[0.03rem]" href="{{ $link['url'] }}">{{ $link['label'] }}</a>
-                                </li>
-                            @endforeach
- 
+                @foreach ($allLinks as $link)
+                    <li class="relative">
+                        <a class="{{ nav_link_class($link['pattern']) }}" href="{{ $link['url'] }}">{{ $link['label'] }}</a>
+                    </li>
+                @endforeach
             </ul>
         </div>
         <div class="header-res-lan-curr">

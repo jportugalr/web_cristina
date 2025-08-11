@@ -2,50 +2,40 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article;
-use App\Models\Catalog;
-use App\Models\Faq;
-use App\Models\Leader;
-use App\Models\Product;
-use App\Models\Promotion;
-use App\Models\Tag;
-use App\Models\Testimonial;
 use Illuminate\Http\Request;
+use App\Repositories\DataRepository;
 
 class RouteController extends Controller
 {
+
+    protected $repository;
+
+    public function __construct(DataRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+
     public function index() {
-        //$products = Product::inRandomOrder()->limit(8)->get(); 
-        $products = Product::with('category','tags','images')
-            ->where('status', 1)
-            ->inRandomOrder()
-            ->limit(8)
-            ->get();
+        $products = $this->repository->getActiveProducts(8);
 
-        $catalogs = Catalog::with('promotions','promotions.details','promotions.details.product.tags','promotions.details.product.images','images')
-            ->where('status', 1)
-            ->get();
-         
-        //$testimonials= Testimonial::all()->where('status', 1);
-        $testimonials = Testimonial::where('status', 1)->get();
+        $catalogs = $this->repository->getActiveCatalogs();
 
-        $faqs = Faq::where('id',1)
-                    ->orWhere('id',25)
-                    ->orWhere('id',26)
-                    ->orWhere('id',3)
-                    ->orWhere('id',27)
-                    ->get();
+        $testimonials = $this->repository->getActiveTestimonials();
+        
+        $faqs = $this->repository->getFaqs([1, 25, 26, 3, 27]);
 
-        $articles = Article::with('images')
-                    ->select(['id','title','intro','slug','created_at'])
-                    ->where('status', 1)
-                    ->get(); 
-                
-        return view('index', ['products' => $products, 'catalogs' => $catalogs,  'testimonials' => $testimonials, 'faqs'=>$faqs, 'articles' => $articles]);
+        $articles = $this->repository->getArticles(5);
+
+        return view('index', [
+            'products' => $products,
+            'catalogs' => $catalogs,
+            'testimonials' => $testimonials,
+            'faqs' => $faqs,
+            'articles' => $articles
+        ]);
     }
 
     public function comingsoon() {
-
         return view('pages-coming-soon');
     }
 
@@ -58,27 +48,34 @@ class RouteController extends Controller
     }
 
     public function about(){
-        $testimonials= Testimonial::all()->where('status', 1);
-        $leaders = Leader::all()->where('status', 1);
+        $testimonials =  $this->repository->getActiveTestimonials();
+        $leaders = $this->repository->getActiveLeaders();
 
-        return view('about-us',['testimonials' => $testimonials, 'leaders' => $leaders]);
+        return view('about-us', [
+            'testimonials' => $testimonials,
+            'leaders' => $leaders
+        ]);
     }
 
     public function faq(){
-        $faqs = Faq::all();
-        $tags = Tag::inRandomOrder()->get();   
-        $testimonials= Testimonial::all()->where('status', 1);
+        $faqs = $this->repository->getFaqs(); 
 
-        return view('faq',['testimonials' => $testimonials, 'faqs' => $faqs]);
+        $tags = $this->repository->getTags(true);
+
+        $testimonials = $this->repository->getActiveTestimonials();
+        
+        return view('faq', [
+            'testimonials' => $testimonials,
+            'faqs' => $faqs,
+            'tags' => $tags
+        ]);
     }
 
     public function contact(){
-        
         return view('contact-us');
     }
-  
+
     public function whatsapp($id, $text=null) {
-        
         if($id==1){
             $mensaje = "Hola, me interesa el producto ". urlencode($text). " pero quiero asegurarme de que sea el adecuado para mí. ¿Podrían ayudarme con más detalles y asesoría personalizada?";
         } else if($id==2){
@@ -92,7 +89,6 @@ class RouteController extends Controller
         } else{
             $mensaje = "¡Hola! Vi que puedo llevarme estos productos Rena Ware GRATIS y quiero saber más sobre el programa. ✨ 👉 ¡Estoy listo para comenzar!";
         }    
-
         return redirect("https://wa.me/51990009542?text=$mensaje");
     }
         

@@ -2,28 +2,42 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Article;
-use App\Models\Catalog;
-use App\Models\Tag;
+use App\Repositories\DataRepository;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
+    protected $repository;
+
+    public function __construct(DataRepository $repository)
+    {
+        $this->repository = $repository;
+    }
 
     public function index() {
-        $articles = Article::select(['id','title','intro','slug','created_at'])->where('status', 1)->orderByDesc('created_at')->get(); 
-        $catalogs = Catalog::all()->where('status', 1);
-                    
-        return view('blog', ['articles' => $articles, 'catalogs' => $catalogs]);
+        $articles = $this->repository->getArticles(); // Desde caché, ordenados por fecha
+        $catalogs = $this->repository->getActiveCatalogs(); // Desde caché
+
+        return view('blog', [
+            'articles' => $articles,
+            'catalogs' => $catalogs
+        ]);
     }
 
     public function show(string $slug) {
-        $article = Article::where('slug', $slug)->first();
-        $articles = Article::select(['id','title','slug','created_at'])->where('status', 1)->orderByDesc('created_at')->take(4)->get();
-        $catalogs = Catalog::all()->where('status', 1);
-              
-        return view('article', ['article' => $article, 'catalogs' => $catalogs, 'articles' => $articles]);
+        $article = $this->repository->getArticles()->firstWhere('slug', $slug);
+
+        if (!$article) {
+            return abort(404, 'Artículo no encontrado');
+        }
+
+        $articles = $this->repository->getArticles(4); // 4 artículos recientes
+        $catalogs = $this->repository->getActiveCatalogs();
+
+        return view('article', [
+            'article' => $article,
+            'catalogs' => $catalogs,
+            'articles' => $articles
+        ]);
     }
-
-
 }

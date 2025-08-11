@@ -10,33 +10,39 @@ use Illuminate\Support\Facades\DB;
 
 class SearchController extends Controller
 {
+    protected $repository;
+
+    public function __construct(DataRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+    
+    private function normalize($string)
+    {
+        // Convierte a minúsculas y elimina diacríticos
+        return strtolower(preg_replace('/[\x00-\x1F\x80-\xFF]/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $string)));
+    }
     public function __invoke()
     {
-        $searchTerm = request('q');
+        $searchTerm = $this->normalize(request('q'));
 
-        $products = Product::with(['category','images','tags'])
-                    ->where('products.status','=','1')
-                    ->where('name', 'LIKE', '%' . $searchTerm . '%')
-                     ->orWhereHas('category', function ($query) use ($searchTerm) {
-                            $query->where('name', 'LIKE', '%' . $searchTerm . '%');
-                            })
-                    ->get();
+        $products = $this->repository->getActiveProducts()->filter(function ($product) use ($searchTerm) {
+            return str_contains($this->normalize($product->name), $searchTerm)
+                || ($product->category && str_contains($this->normalize($product->category->name), $searchTerm));
+        })->values();
 
-        $promotions = Promotion::with(['details','details.product.tags','catalog', 'images'])
-                        ->where('promotions.status','=','1')                        
-                        ->where('name', 'like', '%' . $searchTerm . '%')                        
-                        ->get();
+        $promotions = $this->repository->getAllPromotions()->filter(function ($promotion) use ($searchTerm) {
+            $foundInPromotion = str_contains($this->normalize($promotion->name), $searchTerm);
+            $foundInCategory = $promotion->details->contains(function ($detail) use ($searchTerm) {
+                return $detail->product && $detail->product->category &&
+                    str_contains($this->normalize($detail->product->category->name), $searchTerm);
+            });
+            return $foundInPromotion || $foundInCategory;
+        })->values();
 
-        $promotions = Promotion::with(['details', 'details.product.tags', 'catalog', 'images'])
-        ->where('promotions.status', '1')
-        ->where(function ($query) use ($searchTerm) {
-            $query->where('name', 'LIKE', '%' . $searchTerm . '%') // Buscar en el nombre de la promoción                    
-                    ->orWhereHas('details.product.category', function ($query) use ($searchTerm) {
-                        $query->where('name', 'LIKE', '%' . $searchTerm . '%'); // Buscar en el nombre de la categoría de los productos dentro de la promoción
-                    });
-        })
-        ->get();
-        
-        return view('search',['products'=>$products, 'promotions'=>$promotions]);
+        return view('search', [
+            'products' => $products,
+            'promotions' => $promotions
+        ]);
     }
 }

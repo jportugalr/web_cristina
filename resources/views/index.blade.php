@@ -95,7 +95,7 @@
     </section>
 
     <section class="nsf-certification">
-        <div class="container">
+        <div class="container mx-auto">
             <div class="certification-header">
                 <img src="{{ asset('assets/img/category/category.webp') }}" alt="Certificación NSF P-390" class="certification-image w-[30%] max-[1280px]:w-[40%] max-[992px]:w-[50%] max-[767px]:w-[70%] ">
                 <div class="certification-text">

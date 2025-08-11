@@ -10,6 +10,13 @@ use App\Models\Article;
 
 class SitemapController extends Controller
 {
+    protected $repository;
+    
+    public function __construct(DataRepository $repository)
+    {
+        $this->repository = $repository;
+    }
+    
     public function index()
     {
         $urls = [
@@ -22,8 +29,8 @@ class SitemapController extends Controller
             ['loc' => url('/preguntas-frecuentes'), 'priority' => '0.5', 'changefreq' => 'monthly'],
         ];
 
-        // Agregar productos dinámicos
-        $products = Product::where('status', 1)->get();
+        // Usar repositorio/cache
+        $products = $this->repository->getActiveProducts();
         foreach ($products as $product) {
             $urls[] = [
                 'loc' => route('productos.mostrar', $product->slug),
@@ -32,8 +39,7 @@ class SitemapController extends Controller
             ];
         }
 
-        // Agregar promociones dinámicas
-        $promotions = Promotion::where('status', 1)->get();
+        $promotions = $this->repository->getAllPromotions();
         foreach ($promotions as $promotion) {
             $urls[] = [
                 'loc' => route('promociones.mostrar', [
@@ -45,8 +51,7 @@ class SitemapController extends Controller
             ];
         }
 
-        // Agregar artículos del blog dinámicos
-        $articles = Article::where('status', 1)->get();
+        $articles = $this->repository->getArticles();
         foreach ($articles as $article) {
             $urls[] = [
                 'loc' => route('blog.articulos.mostrar', $article->slug),
